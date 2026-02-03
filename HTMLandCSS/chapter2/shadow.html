@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Shadow</title>
+				<style>
+						:root
+						{
+								--pback: #E1DDDA;
+								--shadowcolor: #777777
+						}
+
+						p
+						{
+								width: 100px;
+								height: 100px;
+								background-color: var(--pback);
+								margin: 20px;
+								display: inline-block;
+						}
+
+						p.one
+						{
+								box-shadow: 0;
+						}
+
+						p.two
+						{
+								box-shadow: 5px 5px 5px var(--shadowcolor);
+						}
+
+						p.three
+						{
+								box-shadow: 5px 5px 5px 5px var(--shadowcolor);
+						}
+
+						p.four
+						{
+								box-shadow: 0 0 10px 1px var(--shadowcolor);
+						}
+
+						p.five
+						{
+								box-shadow: 0 0 10px var(--shadowcolor) inset;
+						}
+
+				</style>
+</head>
+<body>
+	<p class="one"></p>
+	<p class="two"></p>
+	<p class="three"></p>
+	<br/>
+	<p class="four"></p>
+	<p class="five"></p>
+</body>
+</html>
