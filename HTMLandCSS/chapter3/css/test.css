@@ -1,0 +1,67 @@
+:root
+{
+		--testcolor: #777777;
+		--bluish: #79B0F7;
+		--tablebgr: #EDFCF0;
+		--grayish: #D6D6D6;
+}
+
+body
+{
+		font-family: Helvetica;
+}
+
+h1
+{
+		font-size: 2em;
+		color: var(--testcolor)
+}
+
+li
+{
+		list-style-image: url("../images/icon-plus.png");
+		margin: 0 0 10px 0;
+}
+
+table
+{
+		width: 50%;
+}
+
+table, td, tr, th
+{
+		border-collapse: collapse;
+}
+
+table
+{
+		background-color: var(--tablebgr);
+}
+
+.title th
+{
+		background-color: var(--bluish);
+		color: white;
+		height: 2em;
+		border-left: 2px solid var(--grayish);
+		border-right: 2px solid var(--grayish);
+		border-bottom: 2px solid black;
+}
+
+td
+{
+		border-left: 2px solid var(--grayish);
+		border-right: 2px solid var(--grayish);
+}
+
+th:first-child
+{
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 20px;
+}
+
+td
+{
+		padding: 10px;
+}
